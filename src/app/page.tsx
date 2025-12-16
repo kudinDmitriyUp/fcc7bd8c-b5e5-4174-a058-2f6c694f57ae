@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import HeroBillboardRotatedCarousel from '@/components/sections/hero/HeroBillboardRotatedCarousel';
 import TextAbout from '@/components/sections/about/TextAbout';
-import ProductCardFive from '@/components/sections/product/ProductCardFive';
+import ProductCardSix from '@/components/sections/product/ProductCardSix';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
 import FaqDouble from '@/components/sections/faq/FaqDouble';
 import ContactCenterForm from '@/components/sections/contact/ContactCenterForm';
@@ -67,36 +67,40 @@ export default function LandingPage() {
       </div>
       
       <div id="featured" data-section="featured">
-        <ProductCardFive
+        <ProductCardSix
           title="Signature Dishes"
           description="Taste the flavors that keep guests coming back. Each dish is carefully prepared with premium ingredients and authentic Mediterranean techniques."
           products={[
             {
               id: "1",
+              name: "Sababa's Famous Hummus",
+              price: "$12",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1765873813128-8a64kdpq.jpg",
               imageAlt: "Sababa's famous hummus",
-              button: { text: "Order Now", href: "contact" },
               isFavorited: false
             },
             {
               id: "2",
+              name: "Crispy Golden Falafel",
+              price: "$10",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1765873813760-bfy61qa5.jpg",
               imageAlt: "Crispy golden falafel",
-              button: { text: "Order Now", href: "contact" },
               isFavorited: false
             },
             {
               id: "3",
+              name: "Traditional Shakshuka",
+              price: "$14",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1765873814546-sqm7pozp.jpg",
               imageAlt: "Traditional shakshuka",
-              button: { text: "Order Now", href: "contact" },
               isFavorited: false
             },
             {
               id: "4",
+              name: "Grilled Mediterranean Kebab",
+              price: "$16",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1765873815146-7996zzg0.jpg",
               imageAlt: "Grilled Mediterranean kebab",
-              button: { text: "Order Now", href: "contact" },
               isFavorited: false
             }
           ]}
