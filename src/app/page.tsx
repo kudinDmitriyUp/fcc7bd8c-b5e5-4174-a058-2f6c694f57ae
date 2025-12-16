@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import HeroBillboardRotatedCarousel from '@/components/sections/hero/HeroBillboardRotatedCarousel';
 import TextAbout from '@/components/sections/about/TextAbout';
 import ProductCardFive from '@/components/sections/product/ProductCardFive';
-import TestimonialCardThree from '@/components/sections/testimonial/TestimonialCardThree';
+import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
 import FaqDouble from '@/components/sections/faq/FaqDouble';
 import ContactCenterForm from '@/components/sections/contact/ContactCenterForm';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
@@ -109,14 +109,14 @@ export default function LandingPage() {
       </div>
       
       <div id="testimonials" data-section="testimonials">
-        <TestimonialCardThree
+        <TestimonialCardTwo
           title="What Our Guests Say"
           description="Discover why locals and visitors trust Sababa for authentic Mediterranean dining"
           testimonials={[
             {
               id: "1",
               name: "Sarah Cohen",
-              handle: "Local since 2018",
+              role: "Local since 2018",
               testimonial: "The best hummus I've had outside my grandmother's kitchen. Every visit to Sababa feels like coming home.",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1765873815913-pxmnpi1a.jpg",
               imageAlt: "Sarah Cohen"
@@ -124,7 +124,7 @@ export default function LandingPage() {
             {
               id: "2",
               name: "David Mizrahi",
-              handle: "Food enthusiast",
+              role: "Food enthusiast",
               testimonial: "Authentic flavors, warm service, and an atmosphere that celebrates Israeli culture. Simply unforgettable.",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1765873816749-2rbze7wq.jpg",
               imageAlt: "David Mizrahi"
@@ -132,7 +132,7 @@ export default function LandingPage() {
             {
               id: "3",
               name: "Rachel Goldman",
-              handle: "Regular guest",
+              role: "Regular guest",
               testimonial: "Sababa is where I bring my family every Friday. The food is incredible and the hospitality is second to none.",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1765873818099-65c7ry2z.jpg",
               imageAlt: "Rachel Goldman"
@@ -140,7 +140,7 @@ export default function LandingPage() {
             {
               id: "4",
               name: "Michael Levi",
-              handle: "Business owner",
+              role: "Business owner",
               testimonial: "Took my visiting parents here and they keep asking when they can go back. That says everything.",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1765873819049-8vbuvcna.jpg",
               imageAlt: "Michael Levi"
